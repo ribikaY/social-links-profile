@@ -1,0 +1,104 @@
+:root{
+    --primary:hsl(75, 94%, 57%);
+    --background: hsl(0, 0%, 8%);
+    --card-bg:hsl(0, 0%, 12%);
+    --social-link-bg:hsl(0, 0%, 20%);
+    --text-color:hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: textFont;
+    src: url('./public/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: textFont;
+}
+
+body{
+    font-size: 14px;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+.profile-card{
+    width: 86%;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+
+.profile-avatar{
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 24px;
+}
+
+
+.profile-address{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.profile-name{
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-slogan{
+    margin: 29px 0 26px 0;
+    font-weight: 400;
+}
+
+.social-links li{
+    list-style: none;
+    width: 86%;
+    height: 45px;
+    background: var(--social-link-bg);
+    border-radius: 8px;
+    margin: 0 auto 16px auto;
+    font-weight: 700;
+}
+
+.social-links li:hover{
+    transition: all .5s ease-in-out;
+    background: var(--primary);
+    color: var(--social-link-bg);
+    cursor: pointer;
+}
+
+.social-links li:last-of-type{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:440px){
+    .profile-card{
+        width: 385px;
+        height: 610px;
+        padding: 39px 40px;
+    }
+
+    .social-links li{
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+}
