@@ -80,7 +80,7 @@ body{
 }
 
 .social-links li:hover{
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     background: var(--primary);
     color: var(--social-link-bg);
     cursor: pointer;
